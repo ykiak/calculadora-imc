@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Calculadora IMC Online | Calcule seu Índice de Massa Corporal</h1>
+            <p>Descubra seu IMC e Peso Ideal gratuitamente</p>
+        </header>
+        <main>
+            <section class="input_section">
+                <div class="header_input">
+                    <h2>Medidas</h2>
+                </div>
+                <div class="main_input">
+                    <form id="form">
+                        <div class="input_div">
+                            <label for="peso">Peso (kg)</label>
+                            <input type="number" name="peso" id="peso" min="0" placeholder="Ex: 70">
+                        </div>
+                        <div class="input_div">
+                            <label for="altura">Altura (m)</label>
+                            <input type="number" name="altura" id="altura" min="0" placeholder="Ex: 1.70">
+                        </div>
+                        <div class="input_div">
+                            <label for="sexo">Sexo</label>
+                            <select name="sexo" id="sexo">
+                                <option value="m">Masculino</option>
+                                <option value="f">Feminino</option>
+                            </select>
+                        </div>
+                        <button id="button">Calcular</button>
+                    </form>
+                </div>
+            </section>
+            <section class="input_section">
+                <div class="header_input">
+                    <h2>Resultados</h2>
+                </div>
+                <div class="main_input">
+                    <p id="valor">Insira suas medidas para ver o resultado</p> <!-- renderiza o imc -->
+                    <p id="classificacao"></p> <!-- renderiza a classificação -->
+                    <p id="peso_ideal"></p> <!-- renderiza o peso ideal -->
+                </div>
+            </section>
+            <article>
+                <h2 class="header_infor">O que é IMC?</h2>
+                <p class="text">O IMC é uma medida internacional usada para calcular se uma pessoa está no peso ideal. É calculado dividindo o peso (kg) pela altura (m) ao quadrado. É reconhecido pela Organização Mundial da Saúde (OMS). </p>
+                <p class="text">Podem haver variações com base no sexo, idade e fatores genéticos. Todos os resultados devem ser acompanhados por uma avaliação médica para determinar o risco à saúde do paciente.</p>
+                <p class="text">Se seu IMC estiver fora da faixa normal, consulte um profissional de saúde. Eles podem avaliar outros fatores como composição corporal, histórico médico e recomendar um plano personalizado de dieta e exercícios.</p>
+                <p class="text">Para melhorar o IMC: mantenha uma dieta equilibrada e nutritiva, pratique exercícios físicos regulares, durma adequadamente e gerencie o estresse. Para mudanças significativas, consulte um nutricionista ou médico.</p>
+            </article>
+            <article class="imc_table">
+                    <table>
+                        <tr>
+                            <th class="imc">IMC</th>
+                            <th class="homem">Homens</th>
+                            <th class="mulher">Mulheres</th>
+                        </tr>
+                        <tr>
+                            <td class="abaixo_normal">Abaixo do Normal</td>
+                            <td class="homem">20 -</td>
+                            <td class="mulher">19 -</td>
+                        </tr>
+                        <tr>
+                            <td class="normal">Normal</td>
+                            <td class="homem">20 a 24,9</td>
+                            <td class="mulher">19 a 23,9</td>
+                        </tr>
+                        <tr>
+                            <td class="o_leve">Obesidade Leve</td>
+                            <td class="homem">25 a 29,9</td>
+                            <td class="mulher">24 a 28,9</td>
+                        </tr>
+                        <tr>
+                            <td class="o_moderada">Obesidade Moderada</td>
+                            <td class="homem">30 a 39,9</td>
+                            <td class="mulher">29 a 38,9</td>
+                        </tr>
+                        <tr>
+                            <td class="o_morbida">Obesidade Mórbida</td>
+                            <td class="homem">43 +</td>
+                            <td class="mulher">39 +</td>
+                        </tr>
+                    </table>
+            </article>
+        </main>
+        <footer>
+            <div>
+                <p>Produzido por: Kaíky Rodrigues</p>
+                <p>Ceará, 2025</p>
+            </div>
+            <div>
+                <p>Contato:</p>
+                <p>kaikyro11@gmail.com</p>
+            </div>
+            <div>
+                <p>Redes Sociais:</p>
+                <p><a href="https://www.linkedin.com/in/ka%C3%ADky-rodrigues-de-oliveira-08547529a/">LinkedIn</a></p>
+                <p><a href="https://github.com/ykiak">GitHub</a></p>
+            </div>
+            <div>
+                <p>Sites de referência:</p>
+                <p><a href="https://calculadoradecalorias.com.br/calculadora-imc">Site 1</a></p>
+                <p><a href="https://www.tuasaude.com/calculadora/imc/">Site 2</a></p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -16,12 +16,6 @@ https://ykiak.github.io/calculadora-imc/
 - CSS3 (Grid Layout e estilização)
 - JS (manipulação do DOM)
 
-## ESTRUTURA
-/calculadora_imc
-    index.html
-    style.css
-    script.js
-
 ## NOTAS
 Os resultados apresentados possuem caráter informativo e não substituem a avaliação médica
 
